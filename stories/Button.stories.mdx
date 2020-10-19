@@ -1,0 +1,31 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
+import { Button } from './../src/components/Button';
+
+<Meta title="MDX/Button" component={Button} />
+
+# Button
+
+Button component is used to trigger an action or event, such as submitting a form, opening a Dialog, canceling an action, or performing a delete operation.
+
+### Import
+
+```js
+import { Button } from '@storybook-ui/Button';
+```
+
+### Usage
+
+<Canvas>
+  <Button>Button</Button>
+</Canvas>
+
+### Button Variant
+
+Use the variant prop to change the visual style of the Button. You can set the value to primary or secondary.
+
+<Canvas>
+  <Button variant="primary">Button</Button>
+  <Button variant="secondary">Button</Button>
+</Canvas>
+
+<ArgsTable of={Button} />
